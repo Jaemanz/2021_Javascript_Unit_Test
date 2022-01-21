@@ -6,13 +6,12 @@
 		<script src="assets/javascript/task2.js"></script>
 		<script src="assets/javascript/task3.js"></script>
 		<script src="assets/javascript/task4.js"></script>
-		<script src="assets/javascript/task5.js"></script>
 		
 	</head>
 	<body>
 		<div class="header">
 			<div class="container">
-				<h1 class="header-heading">Put Student Names Here</h1>
+				<h1 class="header-heading">Jaeden Lebron</h1>
 			</div>
 		</div>
 		<div class="nav-bar">
@@ -25,6 +24,7 @@
 					<li><a href="#">Nav Link 5</a></li>
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
+					<li><button id="navbutton" onclick="paragraph()">Pls Click Me</button></li>
 					<!-- Button for Task 3 should be placed here -->
 					
 				</ul>
@@ -61,15 +61,18 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img onmouseover ="buttonappear()" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<button style="display:none" id="buttonTask1" onclick="imgdissappear()">Click Me</button>
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
+					<button id="red" onclick="redbutton()">Click For RED</button>
+					<button id="blue" onclick="bluebutton()">Click For BLUE</button>
+					<button id="green" onclick="greenbutton()">Click For GREEN</button>
+
 					
-					
-					<table class="table table-striped">
+					<table class="table table-striped" id="coloredtable">
 						<thead>
 							<tr>
 								<th>#</th>
