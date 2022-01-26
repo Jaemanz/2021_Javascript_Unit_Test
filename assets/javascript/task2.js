@@ -11,3 +11,6 @@ function bluebutton(){
 function greenbutton(){
     document.getElementById("coloredtable").style.backgroundColor= "green"
 }
+function normalbutton(){
+    document.getElementById("coloredtable").style.backgroundColor= "white"
+}
